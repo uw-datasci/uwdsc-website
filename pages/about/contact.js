@@ -1,10 +1,10 @@
 import React from 'react'
 
-const team = () => {
+const contact = () => {
   return (
     <div className='pad' style={{paddingTop:'150px', paddingLeft:'50px'}}
-    >team</div>
+    >contact</div>
   )
 }
 
-export default team
+export default contact

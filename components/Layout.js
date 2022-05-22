@@ -1,10 +1,12 @@
 import React from 'react'
+import '../styles/main.module.css'
 
-
+import Navbar from './Navbar'
 export default function Layout({ children }) {
     return (
       <>
-        <main>{children}</main>
+      <Navbar />
+        <main className='pad'>{children}</main>
       </>
     )
   }
