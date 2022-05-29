@@ -3,6 +3,7 @@ import React from 'react';
 import {Transition} from "@headlessui/react"; 
 import Link from 'next/link';
 import Image from 'next/image'
+import '../styles/Home.module.css'
 
 
 const Navbar = () => {
@@ -22,27 +23,27 @@ const Navbar = () => {
             </div>
 
             <div className='hidden md:block'>
-                <div className='flex ml-10 items-baseline space-x-4'>
+                <div className='flex ml-10 items-baseline space-x-4' style={{fontWeight:'bold', fontSize:'20px'}}>
                     <Link href='/about'> About </Link>
                 </div>
             </div>
             <div className='hidden md:block'>
-                <div className='flex ml-10 items-baseline space-x-4'>
+                <div className='flex ml-10 items-baseline space-x-4' style={{fontWeight:'bold', fontSize:'20px'}}>
                     <Link href='/events'> Events </Link>
                 </div>
             </div>
             <div className='hidden md:block'>
-                <div className='flex ml-10 items-baseline space-x-4'>
+                <div className='flex ml-10 items-baseline space-x-4' style={{fontWeight:'bold', fontSize:'20px'}}>
                     <Link href='/about/team'> Meet the team </Link>
                 </div>
             </div>
             <div className='hidden md:block'>
-                <div className='flex ml-10 items-baseline space-x-4'>
+                <div className='flex ml-10 items-baseline space-x-4' style={{fontWeight:'bold', fontSize:'20px'}}>
                     <Link href='/resources'> Resources </Link>
                 </div>
             </div>
             <div className='hidden md:block'>
-                <div className='flex ml-10 items-baseline space-x-4'>
+                <div className='flex ml-10 items-baseline space-x-4' style={{fontWeight:'bold', fontSize:'20px'}}>
                     <Link href='/about/contact'> Contact </Link>
                 </div>
             </div>
