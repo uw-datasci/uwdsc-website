@@ -16,9 +16,21 @@ a {
   box-sizing: border-box;
 } */
 
-body{
+@charset "utf-8";
+@import "./include-media.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+
+* {
+  font-family: "Montserrat";
+}
+
+body{
   background-color:#F8EEE6;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 @tailwind base;

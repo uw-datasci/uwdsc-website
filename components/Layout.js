@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/main.module.css'
+import '../styles/main.module.scss'
 
 import Navbar from './Navbar'
 export default function Layout({ children }) {

@@ -3,7 +3,7 @@ import React from 'react';
 import {Transition} from "@headlessui/react"; 
 import Link from 'next/link';
 import Image from 'next/image'
-import '../styles/Home.module.css'
+import '../styles/Home.module.scss'
 
 
 const Navbar = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
                 <Image
                 
                 src='/logo.svg'
-                alt='Not available'
+                alt='UWDSC'
                 width={100}
                 height={100}
                 />
