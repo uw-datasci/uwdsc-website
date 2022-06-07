@@ -3,7 +3,7 @@ import React from 'react';
 import {Transition} from "@headlessui/react"; 
 import Link from 'next/link';
 import Image from 'next/image'
-import '../styles/Home.module.scss'
+import styles from '../styles/Home.module.scss'
 
 
 const Navbar = () => {
@@ -14,37 +14,47 @@ const Navbar = () => {
         <div className='flex items-center mx-18 justify-evenly w-full' >
             <div className='flex justify-center items-center flex-shrink-0' style={{padding:'20px'}} >
                 <Image
-                
-                src='/logo.svg'
-                alt='UWDSC'
-                width={100}
-                height={100}
+
+                src='/uwdsc_logo.png'
+                alt='UWaterloo Data Science Club Logo'
+                width={70}
+                height={70}
                 />
             </div>
 
             <div className='hidden md:block'>
                 <div className='flex ml-10 items-baseline space-x-4' style={{fontWeight:'bold', fontSize:'20px'}}>
-                    <Link href='/about'> About </Link>
+                    <div className={styles.Nav_Item}>
+                        <Link href='/about'> About </Link>
+                    </div>
                 </div>
             </div>
             <div className='hidden md:block'>
-                <div className='flex ml-10 items-baseline space-x-4' style={{fontWeight:'bold', fontSize:'20px'}}>
-                    <Link href='/events'> Events </Link>
+                <div className='flex ml-10 items-baseline space-x-4 Nav-Item' style={{fontWeight:'bold', fontSize:'20px'}}>
+                    <div className={styles.Nav_Item}>
+                        <Link href='/events'> Events </Link>
+                    </div>
                 </div>
             </div>
             <div className='hidden md:block'>
-                <div className='flex ml-10 items-baseline space-x-4' style={{fontWeight:'bold', fontSize:'20px'}}>
-                    <Link href='/about/team'> Meet the team </Link>
+                <div className='flex ml-10 items-baseline space-x-4 Nav-Item' style={{fontWeight:'bold', fontSize:'20px'}}>
+                    <div className={styles.Nav_Item}>
+                        <Link href='/about/team'> Meet the team </Link>
+                    </div>
                 </div>
             </div>
             <div className='hidden md:block'>
-                <div className='flex ml-10 items-baseline space-x-4' style={{fontWeight:'bold', fontSize:'20px'}}>
-                    <Link href='/resources'> Resources </Link>
+                <div className='flex ml-10 items-baseline space-x-4 Nav-Item' style={{fontWeight:'bold', fontSize:'20px'}}>
+                    <div className={styles.Nav_Item}>
+                        <Link href='/resources'> Resources </Link>
+                    </div>
                 </div>
             </div>
             <div className='hidden md:block'>
-                <div className='flex ml-10 items-baseline space-x-4' style={{fontWeight:'bold', fontSize:'20px'}}>
-                    <Link href='/about/contact'> Contact </Link>
+                <div className='flex ml-10 items-baseline space-x-4 Nav-Item' style={{fontWeight:'bold', fontSize:'20px'}}>
+                    <div className={styles.Nav_Item}>
+                        <Link href='/about/contact'> Contact </Link>
+                    </div>
                 </div>
             </div>
 
