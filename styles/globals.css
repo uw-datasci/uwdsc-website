@@ -16,11 +16,28 @@ a {
   box-sizing: border-box;
 } */
 
-body{
-
-  background-color:#F8EEE6;
-}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.light{
+
+  background-color:#F8EEE6;
+  color:black;
+}
+
+.dark{
+  background-color:#203B46;
+  color:white;
+}
+
+.white{
+  color: white;
+}
+
+/* @layer base{
+  body{
+    @apply .light; 
+  } 
+} */
