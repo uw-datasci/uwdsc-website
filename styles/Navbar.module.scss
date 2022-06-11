@@ -1,0 +1,72 @@
+@import "./include-media.scss";
+
+.nav_wrap {
+    width: 80vw;
+    background-color: #F8EEE6;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @include media(">=phone", "<lgphone") {
+      margin-top: 4vh;
+    }
+    @include media(">=lgphone", "<tablet") {
+      margin-top: 5vh;
+    }
+    @include media(">=tablet", "<desktop") {
+      margin-top: 5vh;
+    }
+    .navbar_logo {
+      height: 90px;
+      //transform: translate(0, 40%);
+      @include media(">=phone", "<lgphone") {
+        height: 40px;
+      }
+      @include media(">=lgphone", "<tablet") {
+        height: 50px;
+        //transform: translate(0, 40%);
+      }
+      @include media(">=tablet", "<desktop") {
+        height: 50px;
+      }
+    }
+    .links_wrapper {
+        width: 80%;
+        text-decoration: none;
+        padding: 10px;
+        padding-left: 8%;
+        font-size: 24px;
+        font-weight: 600;
+        
+        border: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+        
+        @include media(">=phone", "<lgphone") {
+            font-size: 13px;
+            flex-direction: column;
+        }
+        @include media(">=lgphone", "<tablet") {
+            font-size: 14px;
+            flex-direction: column;
+        }
+        @include media(">=tablet", "<desktop") {
+            font-size: 14px;
+        }
+        .nav_item {
+            padding: 10px;
+            color: #203B46;
+            opacity: 1;
+            
+            &:hover {
+                color: #52806c;
+            }
+        }
+    }
+  }
+  

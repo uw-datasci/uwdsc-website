@@ -19,7 +19,7 @@ a {
 @charset "utf-8";
 @import "./include-media.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;650;700&family=Open+Sans&display=swap");
 
 * {
   font-family: "Montserrat";
@@ -31,6 +31,26 @@ body{
   padding: 0;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.section {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8EEE6;
 }
 
 @tailwind base;
