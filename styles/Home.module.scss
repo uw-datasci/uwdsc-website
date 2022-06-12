@@ -5,7 +5,7 @@
   width: 90vw;
   margin-top: 3vh;
   margin-bottom: 5vh;
-
+  margin-left: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,6 +13,7 @@
 
   @include media("<tablet") {
     flex-direction: column;
+    margin-left: 0%;
   }
 
   .image_wrap {
@@ -57,17 +58,20 @@
       align-items: center;
       margin-top: 0;
       width: 80%;
+      line-height: 2rem;
     }
     @include media(">=lgphone", "<tablet") {
       align-items: center;
       margin-top: 0;
       width: 90%;
+      line-height: 2.8rem;
     }
     @include media(">=tablet", "<desktop") {
-      padding-left: 3%;
+      padding-left: 1%;
       align-items: left;
       margin-top: -5vh;
       width: 95%;
+      line-height: 2.5rem;
     }
     @include media(">=desktop") {
       margin-top: -10vh;
@@ -75,7 +79,7 @@
     
     .uni {
       color: #203B46;
-      font-size: 36px;
+      font-size: 38px;
       font-weight: 600;
 
       @include media(">=phone", "<lgphone") {
@@ -87,11 +91,14 @@
       @include media(">=tablet", "<desktop") {
         font-size: 25px;
       }
+      @include media(">=desktop", "<smdesktop") {
+        font-size: 34px;
+      }
     }
 
     .dsc {
       color: #203B46;
-      font-size: 49px;
+      font-size: 52px;
       font-weight: 600;
       @include media(">=phone", "<lgphone") {
         font-size: 24px;
@@ -101,6 +108,9 @@
       }
       @include media(">=tablet", "<desktop") {
         font-size: 34px;
+      }
+      @include media(">=desktop", "<smdesktop") {
+        font-size: 46px;
       }
     }
   }
