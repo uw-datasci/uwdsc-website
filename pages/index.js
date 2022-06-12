@@ -6,6 +6,27 @@ import {Navbar} from '../components/Navbar'
 
 export default function Home() {
   return (
+    <div className="section">
+      <div className={styles.home_wrap}>
+        <div className={styles.image_wrap}>
+          <img className={styles.mascot} src='/g_smile.png' alt="UWDSC Mascot"></img>
+        </div>
+        <div className={styles.club_name}>
+          <div className={styles.uni}>
+            University of Waterloo
+          </div>
+          <div className={styles.dsc}>
+            Data Science Club
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/*
+export default function Home() {
+  return (
     <div>
     <div style={{paddingTop:'200px'}}>
       <div style={{display: 'flex', 
@@ -50,4 +71,4 @@ export default function Home() {
 
     </div>
   )
-}
+}*/
