@@ -41,7 +41,12 @@
     .mascot {
       width: 94%;
       height: auto;
-      //margin-left: auto;
+      max-width: 1000px;
+      @include media(">lgdesktop") {
+        margin-left: auto;
+        width: 1000px;
+        margin-right: 5%;
+      }
     }
   }
 
@@ -76,6 +81,9 @@
     @include media(">=desktop") {
       margin-top: -10vh;
     }
+    @include media(">lgdesktop") {
+      line-height: 4rem;
+    }
     
     .uni {
       color: #203B46;
@@ -94,6 +102,9 @@
       @include media(">=desktop", "<smdesktop") {
         font-size: 34px;
       }
+      @include media(">lgdesktop") {
+        font-size: 54px;
+      }
     }
 
     .dsc {
@@ -111,6 +122,9 @@
       }
       @include media(">=desktop", "<smdesktop") {
         font-size: 46px;
+      }
+      @include media(">lgdesktop") {
+        font-size: 72px;
       }
     }
   }
