@@ -1,10 +1,40 @@
 
 @import "./include-media.scss";
 
+.home_btn {
+  margin-top: 150px;
+  @include media("<tablet") {
+    margin-top: 70px;
+  }
+  background-color: #98ba8c;
+  border-radius: 40px;
+  border: 0;
+  padding: 10px;
+  .btn_txt {
+    color: #203B46;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2.2rem;
+    margin-left: 21px;
+    margin-right: 21px;
+  }
+  &:hover {
+    //background-color: #8faf84;
+    background-color: #264754;
+    .btn_txt {
+      color: #8faf84;
+      //color: #60967f;
+      //color: #264754;
+    }
+  }
+}
+
 .home_wrap {
   width: 90vw;
-  margin-top: 3vh;
-  margin-bottom: 5vh;
+  margin-top: 40px;
+  //margin-top: 3vh;
+  margin-bottom: 10px;
+  //margin-bottom: 5vh;
   margin-left: 5%;
   display: flex;
   flex-direction: row;
@@ -19,7 +49,7 @@
   .image_wrap {
     //padding-left: 3%;
     width: 45%;
-    margin-bottom: 5vh;
+    //margin-bottom: 5vh;
     margin-left: 2%;
     display: flex;
     align-items: center;
@@ -32,6 +62,7 @@
     @include media(">=lgphone", "<tablet") {
       width: 75%;
       margin-left: 0px;
+      margin-bottom: 30px;
     }
     @include media(">=tablet", "<desktop") {
       width: 100%;

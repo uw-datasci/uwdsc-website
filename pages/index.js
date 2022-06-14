@@ -7,6 +7,7 @@ import {Navbar} from '../components/Navbar'
 export default function Home() {
   return (
     <div className="section">
+      <div className="container">
       <div className={styles.home_wrap}>
         <div className={styles.image_wrap}>
           <img className={styles.mascot} src='/g_smile.png' alt="UWDSC Mascot"></img>
@@ -19,6 +20,9 @@ export default function Home() {
             Data Science Club
           </div>
         </div>
+      </div>
+      <a href="https://linktr.ee/uwdsc" className={styles.home_btn}>
+        <div className={styles.btn_txt}>Join us!</div></a>
       </div>
     </div>
   )

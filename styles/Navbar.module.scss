@@ -3,23 +3,27 @@
 .nav_wrap {
     width: 85vw;
     //background-color: #F8EEE6;
-    margin-top: 3vh;
-    margin-bottom: 5vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     @include media(">=phone", "<lgphone") {
       margin-top: 2vh;
+      margin-bottom: 5vh;
     }
     @include media(">=lgphone", "<tablet") {
-      margin-top: 2vh;
+      //margin-top: 2vh;
+      //margin-bottom: 5vh;
+      margin-top: 20px;
+      margin-bottom: 50px;
     }
     @include media(">=tablet", "<desktop") {
-      margin-top: 3vh;
+      margin-top: 20px;
     }
     @include media(">lgdesktop") {
-      margin-top: 3vh;
+      margin-top: 20px;
     }
     .navbar_logo {
       height: 85px;
