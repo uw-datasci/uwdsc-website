@@ -101,16 +101,19 @@
       margin-top: 0;
       width: 90%;
       line-height: 2.8rem;
+      padding-bottom: 30px;
     }
     @include media(">=tablet", "<desktop") {
       padding-left: 1%;
       align-items: left;
-      margin-top: -5vh;
+      margin-top: -2vh;
       width: 95%;
       line-height: 2.5rem;
+      padding-bottom: 30px;
     }
     @include media(">=desktop") {
-      margin-top: -10vh;
+      margin-top: -4vh;
+      padding-bottom: 50px;
     }
     @include media(">lgdesktop") {
       line-height: 4rem;

@@ -27,6 +27,7 @@
     }
     .navbar_logo {
       height: 85px;
+      cursor: pointer;
       //transform: translate(0, 40%);
       @include media(">=phone", "<lgphone") {
         height: 40px;

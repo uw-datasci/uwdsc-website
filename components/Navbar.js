@@ -9,7 +9,9 @@ const Navbar = () => {
     return (
         <div className="section">
                 <div className={styles.nav_wrap}>
+                    <Link href='/'>
                     <img className={styles.navbar_logo} src='/uwdsc_logo.png' alt="logo"></img>
+                    </Link>
                     <div className={styles.links_wrapper}>
                         <div className={styles.nav_item}>
                             <Link href='/about'> About </Link>
@@ -24,7 +26,7 @@ const Navbar = () => {
                             <Link href='/resources'> Resources </Link>
                         </div>
                         <div className={styles.nav_item}>
-                            <Link href='/contact'> Contact </Link>
+                            <Link href='/about/contact'> Contact </Link>
                         </div>
                     </div>
                 </div>

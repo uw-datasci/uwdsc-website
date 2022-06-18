@@ -1,0 +1,14 @@
+@import "./include-media.scss";
+
+.footer_wrap {
+    width: 100vw;
+    margin-top: 50px;
+    padding: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #203B46;
+    opacity: 1;
+    font-weight: 500;
+}
