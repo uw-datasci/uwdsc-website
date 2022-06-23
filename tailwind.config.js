@@ -1,5 +1,4 @@
 module.exports = {
-  darkMode:'classes',
   future: {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
