@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import react from 'react'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import {Navbar} from '../components/Navbar'
-
 
 export default function Home() {
   return (
@@ -17,17 +16,17 @@ export default function Home() {
       }} > 
 
                <Image
-                src='/uwwhale.svg'
+                src='/g_smile.png'
                 alt='Not available'
                 width={500}
-                height={250}
+                height={300}
                 />
                 <div style={{display:'flex', flowdirection:'column', flexFlow: 'column wrap'}}>
         <div style={{fontSize:'48px', fontFamily:'Montserrat', paddingRight:'10px', gap:'1px'}}>
         Welcome to the 
         </div>
         <div style={{fontSize:'57.6px', fontFamily:'Montserrat', paddingRight:'10px', gap:'1px'}}>
-          Univeristy of Waterloo
+          University of Waterloo
         </div>
         <div style={{fontSize:'76.8px', fontFamily:'Montserrat', paddingRight:'10px', gap:'1px'}}>
           Data Science Club

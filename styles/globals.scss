@@ -1,0 +1,58 @@
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color:#f6d7be;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+@charset "utf-8";
+@import "./include-media.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;650;700&family=Open+Sans&display=swap");
+
+* {
+  font-family: "Montserrat";
+}
+
+body{
+  background-color:#F8EEE6;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.section {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8EEE6;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
