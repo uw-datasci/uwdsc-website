@@ -1,25 +1,33 @@
 @import "./include-media.scss";
 
 .nav_wrap {
-    width: 80vw;
-    background-color: #F8EEE6;
-    margin-top: 4vh;
-    margin-bottom: 5vh;
+    width: 85vw;
+    //background-color: #F8EEE6;
+    margin-top: 25px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     @include media(">=phone", "<lgphone") {
-      margin-top: 4vh;
+      margin-top: 2vh;
+      margin-bottom: 5vh;
     }
     @include media(">=lgphone", "<tablet") {
-      margin-top: 5vh;
+      //margin-top: 2vh;
+      //margin-bottom: 5vh;
+      margin-top: 20px;
+      margin-bottom: 50px;
     }
     @include media(">=tablet", "<desktop") {
-      margin-top: 5vh;
+      margin-top: 20px;
+    }
+    @include media(">lgdesktop") {
+      margin-top: 20px;
     }
     .navbar_logo {
-      height: 90px;
+      height: 85px;
+      cursor: pointer;
       //transform: translate(0, 40%);
       @include media(">=phone", "<lgphone") {
         height: 40px;
@@ -37,26 +45,29 @@
         text-decoration: none;
         padding: 10px;
         padding-left: 8%;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 600;
         
         border: 0px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         cursor: pointer;
         
         @include media(">=phone", "<lgphone") {
-            font-size: 13px;
-            flex-direction: column;
+            font-size: 11px;
+            //flex-direction: column;
         }
         @include media(">=lgphone", "<tablet") {
-            font-size: 14px;
-            flex-direction: column;
+            font-size: 12px;
+            //flex-direction: column;
         }
         @include media(">=tablet", "<desktop") {
             font-size: 14px;
+        }
+        @include media(">lgdesktop") {
+          font-size: 22px;
         }
         .nav_item {
             padding: 5px;

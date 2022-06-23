@@ -1,120 +1,181 @@
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@import "./include-media.scss";
+
+.txt {
+  color: #264754;
+  font-size: 1.3rem;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.subtitle {
+    color: #264754;
+    font-weight: 550;
+    font-size: 2rem;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.intro {
+  width: 95%;
+  margin-top: 40px;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.home_btn {
+  margin-top: 150px;
+  @include media("<tablet") {
+    margin-top: 70px;
+  }
+  background-color: #98ba8c;
+  border-radius: 40px;
+  border: 0;
+  padding: 10px;
+  .btn_txt {
+    color: #203B46;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2.2rem;
+    margin-left: 21px;
+    margin-right: 21px;
+  }
+  &:hover {
+    //background-color: #8faf84;
+    background-color: #264754;
+    .btn_txt {
+      color: #8faf84;
+      //color: #60967f;
+      //color: #264754;
+    }
   }
 }
 
+.home_wrap {
+  width: 90vw;
+  margin-top: 40px;
+  //margin-top: 3vh;
+  margin-bottom: 10px;
+  //margin-bottom: 5vh;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
-.navtext{
-  font-size: 20px;
-  font-weight: bold;
+  @include media("<tablet") {
+    flex-direction: column;
+    margin-left: 0%;
+  }
 
+  .image_wrap {
+    //padding-left: 3%;
+    width: 45%;
+    //margin-bottom: 5vh;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    @include media(">=phone", "<lgphone") {
+      width: 90%;
+      margin-left: 0px;
+    }
+    @include media(">=lgphone", "<tablet") {
+      width: 75%;
+      margin-left: 0px;
+      margin-bottom: 30px;
+    }
+    @include media(">=tablet", "<desktop") {
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    .mascot {
+      width: 94%;
+      height: auto;
+      max-width: 1000px;
+      @include media(">lgdesktop") {
+        margin-left: auto;
+        width: 1000px;
+        margin-right: 5%;
+      }
+    }
+  }
+
+  .club_name {
+    width: 50%;
+    line-height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    overflow: hidden;
+
+    @include media(">=phone", "<lgphone") {
+      align-items: center;
+      margin-top: 0;
+      width: 80%;
+      line-height: 2rem;
+    }
+    @include media(">=lgphone", "<tablet") {
+      align-items: center;
+      margin-top: 0;
+      width: 90%;
+      line-height: 2.8rem;
+      padding-bottom: 30px;
+    }
+    @include media(">=tablet", "<desktop") {
+      padding-left: 1%;
+      align-items: left;
+      margin-top: -2vh;
+      width: 95%;
+      line-height: 2.5rem;
+      padding-bottom: 30px;
+    }
+    @include media(">=desktop") {
+      margin-top: -4vh;
+      padding-bottom: 50px;
+    }
+    @include media(">lgdesktop") {
+      line-height: 4rem;
+    }
+    
+    .uni {
+      color: #203B46;
+      font-size: 38px;
+      font-weight: 600;
+
+      @include media(">=phone", "<lgphone") {
+        font-size: 20px;
+      }
+      @include media(">=lgphone", "<tablet") {
+        font-size: 30px;
+      }
+      @include media(">=tablet", "<desktop") {
+        font-size: 25px;
+      }
+      @include media(">=desktop", "<smdesktop") {
+        font-size: 34px;
+      }
+      @include media(">lgdesktop") {
+        font-size: 54px;
+      }
+    }
+
+    .dsc {
+      color: #203B46;
+      font-size: 52px;
+      font-weight: 600;
+      @include media(">=phone", "<lgphone") {
+        font-size: 24px;
+      }
+      @include media(">=lgphone", "<tablet") {
+        font-size: 36px;
+      }
+      @include media(">=tablet", "<desktop") {
+        font-size: 34px;
+      }
+      @include media(">=desktop", "<smdesktop") {
+        font-size: 46px;
+      }
+      @include media(">lgdesktop") {
+        font-size: 72px;
+      }
+    }
+  }
 }

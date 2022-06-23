@@ -3,51 +3,43 @@ import Image from 'next/image'
 import react from 'react'
 import styles from '../styles/Home.module.scss'
 import {Navbar} from '../components/Navbar'
+import Fade from "react-reveal/Fade"
 
 export default function Home() {
   return (
-    <div>
-    <div style={{paddingTop:'200px'}}>
-      <div style={{display: 'flex', 
-      flowdirection: 'row',
-      justifyContent:'space-between', 
-      // alignItems: 'baseline',
-      paddingLeft: '60px',
-      }} > 
-
-               <Image
-                src='/g_smile.png'
-                alt='Not available'
-                width={500}
-                height={300}
-                />
-                <div style={{display:'flex', flowdirection:'column', flexFlow: 'column wrap'}}>
-        <div style={{fontSize:'48px', fontFamily:'Montserrat', paddingRight:'10px', gap:'1px'}}>
-        Welcome to the 
+    <div className="section">
+      <div className="container">
+        <div className={styles.home_wrap}>
+          <div className={styles.image_wrap}>
+            <img className={styles.mascot} src='/g_smile.png' alt="UWDSC Mascot"></img>
+          </div>
+          <div className={styles.club_name}>
+            <div className={styles.uni}>
+            <Fade bottom cascade>
+              University of Waterloo
+              </Fade>
+            </div>
+            <div className={styles.dsc}>
+            <Fade bottom cascade>
+              Data Science Club
+              </Fade>
+            </div>
+          </div>
         </div>
-        <div style={{fontSize:'57.6px', fontFamily:'Montserrat', paddingRight:'10px', gap:'1px'}}>
-          University of Waterloo
+        <a href="https://linktr.ee/uwdsc" className={styles.home_btn}>
+          <div className={styles.btn_txt}>Join us!</div>
+        </a>
+        <div className={styles.intro}>
+          <a className={styles.subtitle}>Welcome to the club!</a>
+          <br></br>
+          <a className={styles.txt}>We're a passionate, student-led club at the University of Waterloo.</a>
+          <br></br>
+          <a className={styles.txt}>You can find us in MC 3038, or reach out in our Discord server.</a>
+          <br></br>
+          <a className={styles.txt}>Insert whatever here.</a>
         </div>
-        <div style={{fontSize:'76.8px', fontFamily:'Montserrat', paddingRight:'10px', gap:'1px'}}>
-          Data Science Club
-        </div>
-
       </div>
-
-      </div>
-
-      
-
     </div>
-
-    <div style={{display:'flex', justifyContent:'center', paddingTop:'150px'}}>
-    <button className="bg-green-600 hover:bg-green-600 text-black font-bold py-2 px-4 rounded-full" style={{fontSize:'38.4px', 
-  fontFamily:'Montserrat', fontWeight:'bold'}}> 
-      Join Us!
-    </button>
-
-    </div>
-
-    </div>
+    
   )
 }
