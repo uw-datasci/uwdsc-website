@@ -1,6 +1,22 @@
 
 @import "./include-media.scss";
 
+.txt {
+  color: #264754;
+  font-size: 1.3rem;
+}
+
+.subtitle {
+    color: #264754;
+    font-weight: 550;
+    font-size: 2rem;
+}
+
+.intro {
+  width: 95%;
+  margin-top: 40px;
+}
+
 .home_btn {
   margin-top: 150px;
   @include media("<tablet") {
