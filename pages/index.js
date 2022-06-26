@@ -17,12 +17,12 @@ export default function Home() {
             <div className={styles.uni}>
             <Fade bottom cascade>
               University of Waterloo
-              </Fade>
+            </Fade>
             </div>
             <div className={styles.dsc}>
             <Fade bottom cascade>
               Data Science Club
-              </Fade>
+            </Fade>
             </div>
           </div>
         </div>
