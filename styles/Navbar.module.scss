@@ -26,15 +26,15 @@
       margin-top: 20px;
     }
     .navbar_logo {
-      height: 85px;
+      height: 80px;
       cursor: pointer;
-      //transform: translate(0, 40%);
+      
       @include media(">=phone", "<lgphone") {
         height: 40px;
       }
       @include media(">=lgphone", "<tablet") {
         height: 50px;
-        //transform: translate(0, 40%);
+        
       }
       @include media(">=tablet", "<desktop") {
         height: 50px;
@@ -57,11 +57,11 @@
         
         @include media(">=phone", "<lgphone") {
             font-size: 11px;
-            //flex-direction: column;
+            
         }
         @include media(">=lgphone", "<tablet") {
             font-size: 12px;
-            //flex-direction: column;
+            
         }
         @include media(">=tablet", "<desktop") {
             font-size: 14px;

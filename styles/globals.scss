@@ -52,6 +52,12 @@ body{
   justify-content: center;
 }
 
+.subtitle {
+  color: #264754;
+  font-weight: 550;
+  font-size: 2rem;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
