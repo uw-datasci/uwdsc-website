@@ -1,9 +1,9 @@
 import React from 'react'; 
 import {Transition} from "@headlessui/react"; 
 import Link from 'next/link';
-import Image from 'next/image'
-import styles from '../styles/Banner.module.scss'
-import Fade from "react-reveal/Fade"
+import Image from 'next/image';
+import styles from '../styles/Banner.module.scss';
+import Fade from "react-reveal/Fade";
 
 const Banner = () => {
     return (

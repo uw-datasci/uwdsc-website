@@ -1,0 +1,30 @@
+
+.grid_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .team {
+        color: #264754;
+        font-weight: 650;
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    .pres_grid, .dev_grid, .edu_grid, .sd_grid, .fin_grid, .ext_grid, .ev_grid {
+        display: grid;
+        overflow: hidden;
+        grid-gap: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .pres_grid, .fin_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .dev_grid, .edu_grid, .sd_grid, .ext_grid, .ev_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+

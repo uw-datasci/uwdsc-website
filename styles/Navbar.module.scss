@@ -26,7 +26,7 @@
       margin-top: 20px;
     }
     .navbar_logo {
-      height: 80px;
+      height: 75px;
       cursor: pointer;
       
       @include media(">=phone", "<lgphone") {
